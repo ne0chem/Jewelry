@@ -1,0 +1,496 @@
+@charset "UTF-8";
+.body {
+  font-family: "Forum";
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #ffffff 70%, #272727 30%);
+  z-index: 1000;
+  &__container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  &__left {
+    width: 70%;
+  }
+  &__right {
+    background-color: #272727;
+    width: 30%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+  }
+  &__menu {
+    height: 55px;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+  }
+}
+
+.HIGH {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #ffffff 70%, #272727 30%);
+  &__container {
+    display: flex;
+  }
+  &__left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    position: relative;
+  }
+  &__right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 600px;
+    margin-left: auto;
+    gap: 20px;
+    background-color: #272727;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 100px;
+    gap: 40px;
+  }
+  &__leftText {
+    font-size: 64px;
+    font-family: "Forum";
+    margin: 0;
+  }
+  &__lineText {
+    display: flex;
+  }
+  &__line {
+    width: 130px;
+    height: 1px;
+    background-color: #272727;
+    margin-right: 38px;
+  }
+  &__subTitle {
+    font-size: 18px;
+    white-space: nowrap;
+    font-style: italic;
+  }
+
+  &__button {
+    display: flex;
+    margin-left: 100px;
+    font-size: 16px;
+    gap: 20px;
+  }
+  &__buttonActive {
+    color: #272727;
+  }
+
+  &__buttonNoActive {
+    color: #c4c4c4;
+  }
+
+  &__rightText {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  &__rightTitle {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  &__rightSubTitle {
+    color: #c2c2c2;
+    margin-top: 9px;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &__rightPrice {
+    color: #efc58b;
+    margin-bottom: 60px;
+    margin-top: 9px;
+    font-size: 18px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 25%;
+    left: 57%;
+    z-index: 10;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+  }
+}
+
+/*Блок 2*/
+.pol {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  &__right {
+    width: 100%;
+    padding: 20px 0;
+  }
+  &__left {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+/*Блок 3 поиск */
+.poisk {
+  background: linear-gradient(to right, #272727 70%, #ffffff 30%);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    position: relative;
+  }
+  &__map {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  &__img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+  }
+  &__street {
+    position: relative;
+    width: 134px;
+    height: 43px;
+    top: 90px;
+    left: 240px;
+  }
+  &__img2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 135px;
+    left: 54px;
+  }
+  &__img3 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 110px;
+    right: 130px;
+  }
+  & &__img4 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 340px;
+    right: 70px;
+  }
+  &__img5 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 290px;
+    left: 20px;
+  }
+  &__img6 {
+    position: relative;
+    width: 24px;
+    height: 30px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 180px;
+    right: 160px;
+  }
+  /*Левая сторона блока*/
+  &__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #272727;
+  }
+  &__title {
+    font-size: 48px;
+    color: #ffffff;
+    margin-left: 120px;
+    margin-right: 100px;
+  }
+  &__subTitle {
+    margin-top: 16px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6039215686);
+    margin-bottom: 60px;
+    margin-left: 120px;
+    margin-right: 100px;
+  }
+  &__adres {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.3960784314);
+    margin-left: 120px;
+    margin-right: 100px;
+    border-bottom: 2px solid #ffffff;
+  }
+  &__line {
+    position: relative;
+    width: 28px;
+    height: 15px;
+    bottom: 30px;
+    left: 470px;
+  }
+}
+
+/*секция 4 с украшениями*/
+.jewelery {
+  background-color: #c2c2c252;
+  &__container {
+    display: flex;
+    align-items: stretch;
+  }
+  /*Выравнивание центральной картинки и текста*/
+  &__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__centerIMG {
+    width: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 5px;
+  }
+  &__centerTitle {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  &__centerSubTitle {
+    font-size: 18px;
+    color: #e7e7e7;
+  }
+  &__centerPrice {
+    font-size: 18px;
+    color: #efc58b;
+    font-style: italic;
+  }
+  /*Выравнивание боковых картинок и текста*/
+  &__side {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__sideTop {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #ededed;
+  }
+  &__sideBot {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #ededed;
+  }
+  &__sideIMG {
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 260px;
+    height: 180px;
+  }
+  &__text {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  &__title {
+    font-size: 18px;
+    color: #272727;
+  }
+  &__SubTitle {
+    font-size: 18px;
+    color: #757575;
+  }
+  &__price {
+    font-size: 18px;
+    color: #e2b67a;
+    font-style: italic;
+  }
+}
+/*бокс с социальными сетями*/
+.social {
+  background-color: #272727;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__Title {
+    display: flex;
+    color: #ffffff;
+    font-size: 48px;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  &__center {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__logoLeft {
+    display: flex;
+    gap: 30px;
+    margin-left: 160px;
+  }
+  &__logoRight {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 160px;
+  }
+}
+
+/*предпоследняя секция*/
+
+.contacts {
+  background: linear-gradient(to right, #0e7c75d7 30%, #fafafa 30%);
+  &__container {
+    display: flex;
+  }
+  &__LeftIMG {
+    width: 600px;
+    height: 600px;
+  }
+  &__Right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  &__title {
+    font-size: 22px;
+    color: #272727;
+    margin-bottom: 30px;
+  }
+  &__nomer {
+    font-size: 24px;
+    color: #959595;
+    margin-bottom: 110px;
+  }
+  &__Email {
+    color: #959595;
+    font-size: 22px;
+  }
+  &__line {
+    bottom: 140px;
+    width: 300px;
+  }
+  &__strelka {
+    display: flex;
+    width: 30px;
+    height: 20px;
+    margin-left: 270px;
+  }
+}
+
+/*Последний контейнер*/
+.last {
+  background-color: #272727;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #272727;
+    padding: 0 20px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  &__menuBot {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+  &__leftIMG {
+    display: flex;
+    width: 258px;
+    height: 53px;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__rightText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    display: flex;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  &__SubTitle {
+    font-size: 18px;
+    color: #c2c2c2;
+    border-bottom: 1px solid #ffffff;
+  }
+}
